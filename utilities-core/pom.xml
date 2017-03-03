@@ -46,10 +46,6 @@
             <groupId>com.google.guava</groupId>
             <artifactId>guava</artifactId>
         </dependency>
-        <dependency>
-            <groupId>org.liquibase</groupId>
-            <artifactId>liquibase-core</artifactId>
-        </dependency>
 
         <!-- Test Dependencies -->
         <dependency>
@@ -81,10 +77,6 @@
             <groupId>net.trajano.commons</groupId>
             <artifactId>commons-testing</artifactId>
             <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>com.h2database</groupId>
-            <artifactId>h2</artifactId>
         </dependency>
     </dependencies>
 
