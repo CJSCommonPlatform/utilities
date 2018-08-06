@@ -1,5 +1,6 @@
 package uk.gov.justice.services.common.util;
 
+import java.time.LocalDate;
 import java.time.ZonedDateTime;
 
 /**
@@ -8,4 +9,6 @@ import java.time.ZonedDateTime;
 public interface Clock {
 
     ZonedDateTime now();
+
+    LocalDate today();
 }

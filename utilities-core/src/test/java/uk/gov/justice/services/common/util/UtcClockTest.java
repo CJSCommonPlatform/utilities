@@ -6,6 +6,7 @@ import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.CoreMatchers.notNullValue;
 import static org.junit.Assert.assertThat;
 
+import java.time.LocalDate;
 import java.time.ZonedDateTime;
 
 import org.junit.Test;
@@ -31,5 +32,11 @@ public class UtcClockTest {
 
         assertThat(zonedDateTime.isAfter(now().minusSeconds(2L)), is(true));
         assertThat(zonedDateTime.getZone(), is(UTC));
+    }
+
+    @Test
+    public void shouldGetTodaysDate() throws Exception {
+        final LocalDate today = clock.today();
+        assertThat(today, is(LocalDate.now(UTC)));
     }
 }
